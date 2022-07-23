@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNIVERSITY</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/b18995e123.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="Img/logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Course</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contect</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu"></i>
+      </nav>
+      <div class="text-box">
+        <h1>
+            World's Biggest uinversity
+        </h1>
+        <p>
+            Making website is now one of easiest thing in the world.Youjust need to learn HTML,CSS,
+            <br>Javascript and you are good to go.
+        </p>
+        <a href="" class="btn">Know more</a>
+      </div>
+    </section>
+<script>
+  var navLinks=document.getElementById("navLinks");
+  function showMenu(){
+    navLinks.style.right="0";
+  }
+  
+  function hideMenu(){
+    navLinks.style.right="-200px";
+  }
+  
+</script>
+
+  </body>
+</html>
