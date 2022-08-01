@@ -19,7 +19,7 @@
         <a href="index.html"><img src="Img/logo.png" alt="" /></a>
         <div class="nav-links" id="navLinks">
           <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
-          <ul>
+          <ul class="nav-Links">
             <li><a href="">Home</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Course</a></li>
@@ -27,7 +27,7 @@
             <li><a href="">Contect</a></li>
           </ul>
         </div>
-        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        <i class="fa-solid fa-bars menu-btn" onclick="showMenu()"></i>
       </nav>
       <div class="text-box">
         <h1>
@@ -41,14 +41,10 @@
       </div>
     </section>
 <script>
-  var navLinks=document.getElementById("navLinks");
-  function showMenu(){
-    navLinks.style.right="0";
-  }
-  
-  function hideMenu(){
-    navLinks.style.right="-200px";
-  }
+      const menuBtn = document.querySelector(".menu-btn");
+      const navlinks = document.querySelector(".nav-Links");
+      menuBtn.addEventListener("click", () => {
+        navlinks.classList.toggle("mobile-menu");
   
 </script>
 
